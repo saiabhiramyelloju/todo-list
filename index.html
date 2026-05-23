@@ -11,9 +11,25 @@
         <h1>Todo List</h1>
         <form id="todo-form">
             <input type="text" id="todo-input" placeholder="Enter a new todo item" required>
-            <button type="submit">Add</button>
+            <input type="submit" id="new-task-submit" value="Add task"/>
         </form>
         <ul id="todo-list"></ul>
+
+        <main>
+            <section class="task-list">
+                <div id="tasks">
+                    <div class="task">
+                        <div class="content">
+                            <input type="text" class="text" value="my shiny task" readonly />
+                        </div>
+                        <div class="action">
+                            <button type="button" class="edit">Edit</button>
+                            <button class="delete">Delete</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
 
         <script src="app.js"></script>
     </section>
