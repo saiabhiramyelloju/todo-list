@@ -5,9 +5,12 @@ const todolist = document.getElementById("todo-list");
 form.addEventListener("submit",function(event)
 {
     event.preventDefault();
-    const task = InputDeviceInfo.value;
+    const task = input.value;
+    if(taskText === ""){
+        return;
+    }
     const li = document.createElement("li");
     li.innertext = taskText;
     todolist.appendChild(li);
-    InputDeviceInfo.value = "";
+    input.value = "";
 });
