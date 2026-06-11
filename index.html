@@ -7,18 +7,18 @@
     <title>TodoList | Abhiram</title>
 </head>
 <body>
-    <section>
+    <section id="todo">
         <h1>Todo List</h1>
         <form id="todo-form">
-            <input type="text" id="todo-input" placeholder="Enter a new todo item" required>
+            <input type="text" id="todo-input" placeholder="🎯 what's today?" required>
             <input type="submit" id="new-task-submit" value="Add task"/>
         </form>
         <ul id="todo-list"></ul>
 
-        <main>
+        <section>
             <section class="task-list">
                 <div id="tasks">
-                    <div class="task">
+                    <!-- <div class="task">
                         <div class="content">
                             <input type="text" class="text" value="my shiny task" readonly />
                         </div>
@@ -26,10 +26,10 @@
                             <button type="button" class="edit">Edit</button>
                             <button class="delete">Delete</button>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </section>
-        </main>
+        </section>
 
         <script src="app.js"></script>
     </section>
